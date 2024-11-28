@@ -10,7 +10,6 @@ import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-import javax.swing.BorderFactory;
 import javax.swing.Box;
 import javax.swing.BoxLayout;
 import javax.swing.ImageIcon;
@@ -19,6 +18,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
+import javax.swing.border.EmptyBorder;
 
 public class ResultsFrame extends JFrame implements ActionListener {
 
@@ -44,7 +44,7 @@ public class ResultsFrame extends JFrame implements ActionListener {
 
 		// Add the menu bar
 		backButton.setBounds(50, 25, 150, 50);
-		backButton.setFont(new Font(Font.SERIF, Font.BOLD, 30));
+		backButton.setFont(new Font("ARIAL", Font.BOLD, 30));
 		backButton.addActionListener(this);
 		add(backButton);
 
@@ -53,7 +53,7 @@ public class ResultsFrame extends JFrame implements ActionListener {
 
 		// Label for the title
 		titleLabel.setBounds(250, 25, 305, 50);
-		titleLabel.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 40));
+		titleLabel.setFont(new Font("ARIAL", Font.BOLD, 40));
 		add(titleLabel);
 
 		// add 3 panels for displaying the computers
@@ -62,13 +62,13 @@ public class ResultsFrame extends JFrame implements ActionListener {
 			JPanel laptopPanel = new JPanel();
 
 			// setting the panel's location and size according to which one it is
-			laptopPanel.setBounds(150 + i * 400, 150, 300, 500);
+			laptopPanel.setBounds(120 + i * 400, 150, 300, 500);
 
 			// setting the background color
 			laptopPanel.setBackground(Color.WHITE);
 
 			// adding a border to the panel
-			laptopPanel.setBorder(BorderFactory.createLineBorder(Color.black));
+			laptopPanel.setBorder(new EmptyBorder(20, 20, 20, 20));
 
 			// setting layout to box layout
 			// https://docs.oracle.com/javase/tutorial/uiswing/layout/box.html
@@ -165,6 +165,8 @@ public class ResultsFrame extends JFrame implements ActionListener {
 			// Add "Buy" button
 			JButton buyButton = new JButton("Buy");
 			buyButton.setFont(new Font("Arial", Font.BOLD, 30));
+			buyButton.setBackground(new Color(49, 71, 58));
+			buyButton.setForeground(Color.WHITE);
 			buyButton.setAlignmentX(Component.CENTER_ALIGNMENT);
 
 			// setting the size of the button
