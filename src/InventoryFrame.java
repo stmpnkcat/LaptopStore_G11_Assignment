@@ -2,16 +2,12 @@
 import java.awt.event.ActionListener;
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.LayoutManager;
 import java.awt.event.ActionEvent;
-
-import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.JTextField;
+
 public class InventoryFrame extends JFrame implements ActionListener{
 	JLabel inventoryLabel = new JLabel("Inventory");
 	JPanel leftPanel = new JPanel();

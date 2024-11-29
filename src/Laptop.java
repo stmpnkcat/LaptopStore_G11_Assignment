@@ -329,5 +329,9 @@ public class Laptop extends JLabel {
 				+ displaySize + ", vertRes=" + vertRes + ", horRes=" + horRes + ", isTouchScreen=" + isTouchScreen
 				+ ", weight=" + weight + ", link=" + link + "]";
 	}
+
+	public String getInfo(){
+		return "Model: " + brand + "\nPrice: " + price;
+	}
 	
 }

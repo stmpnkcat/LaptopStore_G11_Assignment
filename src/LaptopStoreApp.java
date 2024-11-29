@@ -12,6 +12,8 @@ public class LaptopStoreApp {
 		laptopResultsArray[1] = laptopArray[1];
 		laptopResultsArray[2] = laptopArray[2];
 		
+		// InfoFrame infoFrame = new InfoFrame(laptopArray[0]);
+		// SurveyFrame surveyFrame = new SurveyFrame();
 		ResultsFrame resultsFrame = new ResultsFrame();
 //		InventoryFrame inventoryFrame = new InventoryFrame();
 	}
